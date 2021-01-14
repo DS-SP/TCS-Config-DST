@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "subpage-banner-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/subpageBanner/SubpageBannerWebPart.js",
+          "manifest": "./src/webparts/subpageBanner/SubpageBannerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SubpageBannerWebPartStrings": "lib/webparts/subpageBanner/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}

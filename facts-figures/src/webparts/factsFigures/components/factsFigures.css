@@ -1,0 +1,57 @@
+
+body {
+  background: #ededed;
+  padding-left: 8%;
+  padding-right: 2.6%;
+  font-family: FS Albert Web;
+}
+body .facts_figure {
+  clear: both;
+  display: inline-block;
+  width: 100%;
+  float: left;
+  /* height: auto; */
+  padding-bottom: 11px;
+  background: #f3f2f1;
+}
+body .facts_figure .title {
+  display: inline-block;
+  
+   text-transform: uppercase;
+    margin-bottom: 20px;
+	font-weight: normal;
+font-family: FS Albert Web regular;
+    line-height: 24px;
+  font-size: 32px;
+  width: 89%;
+  margin-bottom: 18px;
+@media screen and (max-width: 767px) {
+font-size: 20px;
+}
+}
+body .facts_figure .facts {
+  width: 194px;
+  text-align: center;
+  margin: auto;
+  margin-right: 3%;
+  float: left;
+  display: inline-block;
+}
+@media screen and (max-width: 767px) {
+  body .facts_figure .facts {
+    width: 45%;
+    margin-bottom: 1%;
+  }
+}
+body .facts_figure .facts .fact_info {
+  color: #6d7278;
+  font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+font-family: 'FS Albert Web regular';
+  display: inline-block;
+@media screen and (max-width: 767px) {
+font-size: 14px;
+    line-height: 15px;
+}
+}

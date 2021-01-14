@@ -1,0 +1,140 @@
+.complementary-title {
+  margin: 37px 0 27px;
+  line-height: 24px;
+  font-size: 32px;
+text-transform: uppercase;
+    font-family: 'FS Albert Web Regular';
+}
+
+@media screen and (max-width: 768px) {
+  .complementary-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 20px;
+   
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+}
+
+.all-cards {
+  display: inline-flex;
+}
+
+.breaking_line {
+border:1px solid #b8c1cb;
+}
+
+
+@media screen and (max-width: 768px) {
+  .all-cards {
+    display: block;
+  }
+}
+.all-cards .individual-cards {
+  padding: 15px;
+  background: white;
+   width: 31%;
+  margin-right: 27px;
+  border-radius: 5px;
+}
+.all-cards .individual-cards:last-child {
+  margin-right: 0px;
+}
+@media screen and (max-width: 768px) {
+  .all-cards .individual-cards {
+    margin-bottom: 20px;
+width:auto;
+    margin-right: 0px;
+  }
+}
+.all-cards .individual-cards .individual-cards-title {
+  font-size: 17.1px;
+  line-height: 32.3px;
+    font-family: 'FS Albert Web Bold';
+  letter-spacing: 0.14px;
+  font-weight: bold;
+  color: #00597a;
+}
+@media screen and (max-width: 768px) {
+  .all-cards .individual-cards .individual-cards-title {
+    margin-bottom: 14px;
+  }
+}
+.all-cards .individual-cards .card-description {
+  font-size: 15.2px;
+  line-height: 22px;
+  color: #616365;
+  letter-spacing: 0.07px;
+font-family: 'FS Albert Web Regular';
+  font-weight:normal;
+}
+@media screen and (max-width: 768px) {
+  .all-cards .individual-cards .card-description {
+    font-size: 14px;
+    letter-spacing: 0.06px;
+  }
+}
+.all-cards .individual-cards .card-description .read-more {
+  color: #0093d0;
+}
+@media screen and (max-width: 768px) {
+  .all-cards .individual-cards .below-info {
+    display: none;
+  }
+}
+
+ .all-cards .individual-cards .below-info {
+display: flex;
+}
+
+.all-cards .individual-cards .below-info .cat-cap-ser {
+  display: block;
+  float: left;
+  width: 31%;
+  word-break: break-word;
+  margin: 14px 11px 10px 0px;
+  font-size: 15.2px;
+  letter-spacing: 0.07px;
+  font-weight: normal;
+font-family: 'FS Albert Web Regular';
+  line-height: 25.7px;
+}
+.all-cards .individual-cards .below-info .cat-cap-ser:last-child {
+  margin-right: 0px;
+}
+.all-cards .individual-cards .below-info .cat-cap-ser .cat-cap-ser-title {
+  color: #b8c1cb;
+  display: block;
+}
+.all-cards .individual-cards .below-info .cat-cap-ser .cat-cap-ser-info {
+  color: #616365;
+}
+
+.for-back-arr {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .for-back-arr {
+    display: none;
+  }
+}
+.for-back-arr .fa {
+  color: #616365;
+  margin: 0px 55px;
+  font-size: 30px;
+}
+.for-back-arr .slicks {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: auto 7px;
+}
+.for-back-arr .active-slick {
+  background: #d8d8d8;
+}
+.for-back-arr .inactive-slick {
+  background: #b8c1cb;
+}

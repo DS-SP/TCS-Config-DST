@@ -1,0 +1,1 @@
+{"version":3,"file":"IImageProps.d.ts","sourceRoot":"","sources":["../../../../src/webparts/carousel/components/IImageProps.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,MAAM,iBAAiB,CAAC;AAChD,MAAM,WAAW,WAAW;IAC1B,IAAI,EAAE,aAAa,CAAC;IACpB,gBAAgB,EAAE,MAAM,CAAC;IACzB,UAAU,EAAE,GAAG,CAAC;IAChB,MAAM,EAAE,MAAM,CAAC;IACf,sBAAsB,EAAC,GAAG,CAAC;CAC5B"}

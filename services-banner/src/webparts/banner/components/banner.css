@@ -1,0 +1,256 @@
+.banner-container {
+  max-width: 1204px;
+  margin: 0 auto;
+  position: relative;
+  font-family: "Segoe UI";
+}
+
+.banner-wrapper {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .banner-wrapper {
+    background-position: center left;
+  }
+}
+.banner-wrapper .banner-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin: 0 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  .banner-wrapper .banner-item {
+    padding: 40px 20px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1200px) {
+  .banner-wrapper .banner-item {
+    padding: 10px 10px;
+    
+  }
+}
+.banner-wrapper .banner-item .banner-text {
+  color: #fff;
+font-family:fs albert web light;
+  /*width: 50%;*/
+}
+@media only screen and (max-width: 767px) {
+  .banner-wrapper .banner-item .banner-text {
+    width: 100%;
+    text-align: center;
+  }
+
+.banner-wrapper .banner-item .banner-image img {
+    display: block;
+    margin: auto;
+width:100%;
+}
+}
+.banner-wrapper .banner-item .banner-text h1 {
+  font-weight: 200;
+  font-size: 7.65vw;
+  line-height: 6.2vw;
+font-family:fs albert web light;
+  letter-spacing: -1.46px;
+  margin: 35px 0 25px;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 1440px) {
+  .banner-wrapper .banner-item .banner-text h1 {
+    font-size: 104px;
+    line-height: 85px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner-wrapper .banner-item .banner-text h1 {
+    font-size: 52px;
+    line-height: normal;
+    margin: 15px 0 0;
+  }
+}
+.banner-wrapper .banner-item.edge-touch .banner-promo-section {
+  top: -70px;
+}
+@media only screen and (max-width: 767px) {
+  .banner-wrapper .banner-item.edge-touch .banner-promo-section {
+    top: 0;
+  }
+}
+.banner-wrapper .banner-item .banner-promo-section {
+  width: 41%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 910px) {
+  .banner-wrapper .banner-item .banner-promo-section {
+    width: 65%;
+    margin-left: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner-wrapper .banner-item .banner-promo-section {
+    margin: 30px auto 0;
+    width: 100%;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+}
+.banner-wrapper .banner-item .banner-promo-section .banner-image {
+  position: relative;
+}
+.banner-wrapper .banner-item .banner-promo-section .banner-image img {
+  max-width: 100%;
+  height: auto;
+}
+.banner-wrapper .banner-item .banner-promo-section .banner-image:after {
+  content: "";
+  position: absolute;
+  background: url("https://samplee.sharepoint.com/sites/TestDST/SiteAssets/images/oval.png")
+    no-repeat center center/cover;
+  bottom: -28%;
+  height: 60px;
+  width: 130%;
+  left: -15%;
+  background-size: 100% 68%;
+}
+@media only screen and (max-width: 767px) {
+  .banner-wrapper .banner-item .banner-promo-section .banner-image:after {
+    display: none;
+  }
+}
+.banner-wrapper .banner-item .banner-promo-section .promoted-text {
+  width: 50%;
+  text-align: left;
+  margin: 0 5px 0 5%;
+  max-width: 200px;
+  color: #fff;
+}
+@media only screen and (max-width: 536px) {
+  .banner-wrapper .banner-item .banner-promo-section .promoted-text {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+.banner-wrapper .banner-item .banner-promo-section .promoted-text h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+.banner-wrapper
+  .banner-item
+  .banner-promo-section
+  .promoted-text
+  .promo-detail {
+  font-size: 15px;
+  line-height: 16px;
+}
+.banner-wrapper
+  .banner-item
+  .banner-promo-section
+  .promoted-text
+  .promo-detail
+  a.read-more {
+  display: block;
+  margin-top: 10px;
+  color: #75d1e0;
+  text-decoration: none;
+}
+.banner-wrapper .banner-item .short-text {
+  color: #fff;
+  max-width: 430px;
+
+}
+@media only screen and (max-width: 767px) {
+  .banner-wrapper .banner-item .short-text {
+    margin: 30px auto 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner-wrapper .banner-item .short-text.desktop {
+    display: none;
+  }
+}
+.banner-wrapper .banner-item .short-text.mobile {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .banner-wrapper .banner-item .short-text.mobile {
+    display: block;
+  }
+.banner-wrapper .banner-item .short-text a {
+padding: 18px 28px 4px 13px;
+}
+}
+.banner-wrapper .banner-item .short-text a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+font-family:fs albert web light;
+  letter-spacing: 0.75px;
+  font-weight: 300;
+  padding: 4px 28px 4px 13px;
+  display: inline-block;
+  border: 0.8px solid #fff;
+  border-radius: 3px;
+  margin-top: 25px;
+  position: relative;
+}
+.banner-wrapper .banner-item .short-text a:after {
+  content: "➜";
+  background: url("https://samplee.sharepoint.com/sites/TestDST/SiteAssets/images/arrow-icon.png")
+    no-repeat center center/cover;
+  position: absolute;
+  top: 2px;
+  right: 12px;
+  width: 14px;
+  height: 14px;
+}
+.banner-wrapper .banner-item .short-text p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+font-family:fs albert web light;
+  margin: 0;
+}
+@media only screen and (max-width: 767px) {
+  .banner-wrapper .banner-item .short-text p {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
+}

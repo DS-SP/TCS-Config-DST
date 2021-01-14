@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "case-studies-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/caseStudies/CaseStudiesWebPart.js",
+          "manifest": "./src/webparts/caseStudies/CaseStudiesWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CaseStudiesWebPartStrings": "lib/webparts/caseStudies/loc/{locale}.js"
+  }
+}

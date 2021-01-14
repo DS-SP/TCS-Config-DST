@@ -1,0 +1,1 @@
+{"version":3,"file":"ICarouselState.d.ts","sourceRoot":"","sources":["../../../../src/webparts/carousel/components/ICarouselState.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,MAAM,iBAAiB,CAAC;AAChD,MAAM,WAAW,cAAc;IAC7B,aAAa,EAAE,aAAa,EAAE,CAAC;IAC/B,gBAAgB,EAAE,MAAM,CAAC;IACzB,QAAQ,CAAC,EAAC,GAAG,CAAC;CACf"}

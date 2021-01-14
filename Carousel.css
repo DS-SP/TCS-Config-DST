@@ -1,0 +1,246 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1268px;
+  padding: 0 16px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-wrapper {
+  background: url("https://pfizer.sharepoint.com/sites/DST/HomePage_Carousel_Images/background.jpg")
+    no-repeat center center/cover;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .carousel-wrapper {
+    background-position: center left;
+  }
+}
+.carousel-wrapper .carousel-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 110px 7.2% 10%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media only screen and (min-width: 1440px) {
+  .carousel-wrapper .carousel-item {
+    padding: 110px 7.2% 235px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .carousel-wrapper .carousel-item {
+    padding: 40px 0 80px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+.carousel-wrapper .carousel-item .corousel-text {
+  color: #fff;
+  /* padding: 10% 0; */
+  width: 55%;
+}
+@media only screen and (max-width: 767px) {
+  .carousel-wrapper .carousel-item .corousel-text {
+    width: 100%;
+  }
+}
+.carousel-wrapper .carousel-item .corousel-text img {
+  padding-bottom: 25px;
+  max-width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 767px) {
+  .carousel-wrapper .carousel-item .corousel-text img {
+    display: block;
+    margin: 0 auto 15px;
+    padding-bottom: 0;
+  }
+}
+.carousel-wrapper .carousel-item .carousel-image {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 480px;
+  width: 50%;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .carousel-wrapper .carousel-item .carousel-image {
+    margin: 30px auto 0;
+    width: 100%;
+  }
+}
+.carousel-wrapper .carousel-item .carousel-image img {
+  max-width: 100%;
+  height: auto;
+}
+.carousel-wrapper .carousel-item .short-text {
+  color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  .carousel-wrapper .carousel-item .short-text {
+    margin: 30px auto 0;
+    max-width: 430px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .carousel-wrapper .carousel-item .short-text.desktop {
+    display: none;
+  }
+}
+.carousel-wrapper .carousel-item .short-text.mobile {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .carousel-wrapper .carousel-item .short-text.mobile {
+    display: block;
+  }
+}
+.carousel-wrapper .carousel-item .short-text h2 {
+  font-family: SegoeUI-Light;
+  font-weight: normal;
+  font-size: 5.3vw;
+  line-height: 4.3vw;
+  margin: 2px 0 0;
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+  max-width: 412px;
+}
+@media only screen and (min-width: 1440px) {
+  .carousel-wrapper .carousel-item .short-text h2 {
+    font-size: 72px;
+    line-height: 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .carousel-wrapper .carousel-item .short-text h2 {
+    font-size: 7.7vw;
+    line-height: 5.3vw;
+  }
+}
+.carousel-wrapper .carousel-item .short-text a {
+  color: #fff;
+  text-decoration: none;
+  font-family: SegoeUI-Light;
+  font-size: 10.5px;
+  letter-spacing: 0.66px;
+  padding: 3px 19px 3px 8px;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  margin-top: 25px;
+  position: relative;
+}
+.carousel-wrapper .carousel-item .short-text a:after {
+  content: "➜";
+  position: absolute;
+  right: 4px;
+}
+.carousel-wrapper .carousel-item .short-text p {
+  max-width: 508px;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: SegoeUI-Light;
+  margin: 0;
+}
+@media only screen and (max-width: 767px) {
+  .carousel-wrapper .carousel-item .short-text p {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.carousel-wrapper .carousel-control-next,
+.carousel-wrapper .carousel-control-prev {
+  position: absolute;
+  top: -8%;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  transition: opacity 0.15s ease;
+}
+.carousel-wrapper .carousel-control-next-icon,
+.carousel-wrapper .carousel-control-prev-icon {
+  display: inline-block;
+  width: 20px;
+  height: 38px;
+}
+.carousel-wrapper .carousel-control-next {
+  right: 50px;
+}
+@media only screen and (max-width: 767px) {
+  .carousel-wrapper .carousel-control-next {
+    right: 10px;
+  }
+}
+.carousel-wrapper .carousel-control-next .carousel-control-next-icon {
+  background: url("https://pfizer.sharepoint.com/sites/DST/HomePage_Carousel_Images/next.png")
+    no-repeat center center;
+}
+.carousel-wrapper .carousel-control-prev {
+  left: 50px;
+}
+@media only screen and (max-width: 767px) {
+  .carousel-wrapper .carousel-control-prev {
+    left: 10px;
+  }
+}
+.carousel-wrapper .carousel-control-prev .carousel-control-prev-icon {
+  background: url("https://pfizer.sharepoint.com/sites/DST/HomePage_Carousel_Images/prev.png")
+    no-repeat center center;
+}
+.carousel-wrapper .carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  left: 0;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+.carousel-wrapper .carousel-indicators li {
+  border-radius: 100%;
+  color: #fff;
+  z-index: 99999;
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 13px;
+  height: 13px;
+  margin-right: 6px;
+  margin-left: 6px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #b8c1cb;
+  transition: opacity 0.6s ease;
+}
+.carousel-wrapper .carousel-indicators li.active {
+  background-color: #75d1e0;
+}

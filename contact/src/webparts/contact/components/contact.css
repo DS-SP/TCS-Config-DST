@@ -1,0 +1,147 @@
+body {
+  background: #f3f2f1;
+}
+.contact-wrapper {
+  background: rgb(243, 242, 241);
+}
+body .contact-title {
+  margin-top: 36px;
+  font-weight: normal;
+  line-height: 24px;
+text-transform:uppercase;
+    FONT-FAMILY: 'FS Albert Web Regular';
+  font-size: 32px;
+  letter-spacing: 0;
+}
+@media screen and (max-width: 768px) {
+  body .contact-title {
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 22px;
+  }
+}
+body .inputs {
+  justify-content: center;
+  display: grid;
+}
+@media screen and (max-width: 768px) {
+  body .inputs {
+    margin: 0;
+  }
+}
+body .inputs .send-button {
+  margin: 38px 0 60px 0;
+  width: 143px;
+  font-size: 20px;
+  padding: 12px 7px;
+  font-family: fs albert web regular;
+  background: #005270;
+  line-height: 15px;
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+  body .inputs .send-button {
+    margin: 19px auto 26px;
+    border-radius: 8px;
+  }
+}
+body .inputs .input-title {
+  font-size: 33px;
+  font-weight: normal;
+    FONT-FAMILY: 'FS Albert Web Regular';
+  letter-spacing: -0.46px;
+  margin: 26px 0 40px 0;
+}
+@media screen and (max-width: 768px) {
+  body .inputs .input-title {
+    margin: 26px 0 30px;
+    font-size: 23px;
+    line-height: 28px;
+  }
+}
+.breaking_line {
+border:1px solid #b8c1cb;
+}
+
+body .inputs .user-input {
+  margin-bottom: 1.5%;
+font-weight: normal;
+    FONT-FAMILY: 'FS Albert Web Regular';
+    font-size: 22px;
+    letter-spacing: .43px;
+}
+@media screen and (max-width: 768px) {
+  body .inputs .user-input {
+    margin-bottom: 18px;
+	font-weight: normal;
+    font-size: 12px;
+    line-height:23px;
+  }
+}
+body .inputs .user-input input {
+  display: block;
+  width: 793px;
+  height: 51px;
+}
+@media screen and (max-width: 768px) {
+  body .inputs .user-input input {
+    width: 100% !important;
+height:26px;
+  }
+
+.ms-Dropdown-container .ms-Dropdown-title {
+    padding-top: 0;
+	height:26px !important;
+}
+
+.ms-Dropdown-caretDownWrapper {
+    padding-top: 0 !important;
+}
+
+body .inputs .user-input .required-text {
+color:#cc292b;
+font-size:10px;
+line-height:23px;
+}
+}
+body .inputs .user-input .required-text {
+  color: #e02020;
+  float: right;
+font-size:18px;
+letter-spacing:0px;
+}
+
+.ms-BasePicker-text {
+    border: none;
+}
+.message input {
+       width: 805px !important;
+    height: 135px !important;
+    border: none;
+}
+
+.ms-Dropdown-container .ms-Dropdown-title {
+border-style: none !important;
+    height: 51px;
+    padding-top: 1%;
+}
+
+.ms-Dropdown .ms-Dropdown-caretDownWrapper {
+    padding-top: 1%;
+}
+
+#people .ms-Label {
+    display: none;
+}
+.is-required::after {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+  
+.message input {
+    height: 83px !important;
+}
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "download-section-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/downloadSection/DownloadSectionWebPart.js",
+          "manifest": "./src/webparts/downloadSection/DownloadSectionWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DownloadSectionWebPartStrings": "lib/webparts/downloadSection/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "9260ea1f-5f66-41c9-8f9f-e948d87ef521",
+  "alias": "BannerWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportsFullBleed": true,
+  "supportedHosts": ["SharePointWebPart"],
+
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": { "default": "Other" },
+      "title": { "default": "Banner" },
+      "description": { "default": "Banner description" },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "backgroundImageURL": "https://samplee.sharepoint.com/sites/carousel/SiteAssets/background.jpg",
+        "thumbnailURL": "https://samplee.sharepoint.com/sites/carousel/Shared%20Documents/slide-1.png",
+        "heading": "TEST",
+        "paragraph": "TEST Paragraph",
+        "linkText": "Link text",
+        "linkURL": "Link URL",
+        "logo": "https://samplee.sharepoint.com/sites/carousel/SiteAssets/white-on-color.png"
+      }
+    }
+  ]
+}

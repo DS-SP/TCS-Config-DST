@@ -1,0 +1,1 @@
+//# sourceMappingURL=IImageProps.js.map

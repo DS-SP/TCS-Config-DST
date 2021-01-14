@@ -1,0 +1,1 @@
+{"version":3,"file":"FlyoutColumn.d.ts","sourceRoot":"","sources":["../../../src/extensions/model/FlyoutColumn.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,IAAI,EAAC,MAAM,QAAQ,CAAC;AAG5B,qBAAa,YAAY;IACd,EAAE,EAAC,MAAM,CAAC;IACV,cAAc,EAAE,MAAM,CAAC;IACvB,OAAO,CAAC,EAAC,IAAI,CAAC;IACd,KAAK,CAAC,EAAC,IAAI,EAAE,CAAC;IACd,YAAY,CAAC,EAAC,MAAM,CAAC;CAC/B"}

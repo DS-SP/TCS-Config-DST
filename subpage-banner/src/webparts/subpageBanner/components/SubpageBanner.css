@@ -1,0 +1,221 @@
+
+.subpageBanner-wrapper {
+  background: rgb(243, 242, 241);
+  position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+  .subpageBanner-wrapper {
+    background-position: center left;
+  }
+}
+
+.subpageBanner-wrapper .subpageBanner-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 70px 0;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .subpageBanner-wrapper .subpageBanner-item {
+    padding: 40px 20px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.subpageBanner-wrapper .subpageBanner-item .subpageBanner-text {
+  color: #000;
+  width: 48%;
+}
+
+@media only screen and (max-width: 767px) {
+  .subpageBanner-wrapper .subpageBanner-item .subpageBanner-text {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.subpageBanner-wrapper .subpageBanner-item .subpageBanner-text h1 {
+  font-weight: 300;
+font-family: 'FS Albert Web Light';
+  font-size: 72px;
+  line-height: 78px;
+  letter-spacing: -1.01px;
+  margin: 0 0 35px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1440px) {
+  .subpageBanner-wrapper .subpageBanner-item .subpageBanner-text h1 {
+    font-size: 72px;
+    line-height: 78px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .subpageBanner-wrapper .subpageBanner-item .subpageBanner-text h1 {
+    font-size: 36px;
+    line-height: normal;
+text-align: left;
+    font-weight: lighter;
+    letter-spacing: 0.01px;
+    margin: 15px 0 0;
+  }
+}
+
+.subpageBanner-wrapper .subpageBanner-item .subpageBanner-image {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 480px;
+  width: 50%;
+  position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+  .subpageBanner-wrapper .subpageBanner-item .subpageBanner-image {
+    margin: 30px auto 0;
+    width: 100%;
+display:none;
+  }
+}
+
+.subpageBanner-wrapper .subpageBanner-item .subpageBanner-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.subpageBanner-wrapper .subpageBanner-item .subpageBanner-image:after {
+  content: "";
+  position: absolute;
+  background: url(images/oval.png) no-repeat center center/cover;
+  bottom: -85px;
+  height: 60px;
+  width: 100%;
+  right: -25px;
+  background-size: 100% 68%;
+}
+
+@media only screen and (max-width: 767px) {
+  .subpageBanner-wrapper .subpageBanner-item .subpageBanner-image:after {
+    display: none;
+  }
+}
+
+.subpageBanner-wrapper .subpageBanner-item .short-text {
+  color: #000;
+  max-width: 381px;
+}
+
+@media only screen and (max-width: 767px) {
+  .subpageBanner-wrapper .subpageBanner-item .short-text {
+    margin: 10px auto 0;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .subpageBanner-wrapper .subpageBanner-item .short-text .desktop {
+    
+  }
+}
+
+.subpageBanner-wrapper .subpageBanner-item .short-text .mobile {
+ 
+}
+
+@media only screen and (max-width: 767px) {
+  .subpageBanner-wrapper .subpageBanner-item .short-text .mobile {
+    display: block;
+  }
+}
+
+.subpageBanner-wrapper .subpageBanner-item .short-text a.subpageread-more {
+  color: #00aeef;
+  text-decoration: none;
+}
+
+.subpageBanner-wrapper .subpageBanner-item .short-text p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+font-family: 'FS Albert Web Light';
+  margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .subpageBanner-wrapper .subpageBanner-item .short-text p {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: left;
+  }
+}
+
+
+
+.subpageBanner-wrapper .subpageBanner-container .subpageBanner-item .subpageBanner-text .blue_div {
+  width: 261px;
+  vertical-align: middle;
+  display: inline-block;
+  border-radius: 11px;
+   margin-top: 35px;
+  background: #00aeef;
+  padding: 14px 13px 16px;
+}
+
+@media only screen and (max-width: 767px) {
+.subpageBanner-wrapper .subpageBanner-container .subpageBanner-item .subpageBanner-text .blue_div {	
+   margin-top: 15px;
+}
+}
+.subpageBanner-wrapper .subpageBanner-container .subpageBanner-item .subpageBanner-text .blue_div .profile_icon {
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+}
+.subpageBanner-wrapper .subpageBanner-container .subpageBanner-item .subpageBanner-text .blue_div .profile_icon img {
+  border-radius: 49%;
+  border: 1px solid #b8c1cb;
+}
+.subpageBanner-wrapper .subpageBanner-container .subpageBanner-item .subpageBanner-text .blue_div .owner_details {
+  display: inline-block;
+  width: 60%;
+  /* padding: 0 19%; */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 767px){
+
+.subpageBanner-wrapper .subpageBanner-container .subpageBanner-item .subpageBanner-text .blue_div .owner_details {
+  
+  text-align:left;
+}
+}
+.subpageBanner-wrapper .subpageBanner-container .subpageBanner-item .subpageBanner-text .blue_div .owner_details label {
+  display: block;
+  color: white;
+}
+.subpageBanner-wrapper .subpageBanner-container .subpageBanner-item .subpageBanner-text .blue_div .owner_details .owner_name {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.49px;
+font-family: 'FS Albert Web Light';
+  font-weight: bold;
+}
+.subpageBanner-wrapper .subpageBanner-container .subpageBanner-item .subpageBanner-text .blue_div .owner_details .owner_desig {
+  letter-spacing: 0.08px;
+  font-size: 16px;
+  line-height: 22px;
+font-family: 'FS Albert Web Light';
+  font-weight: lighter;
+}

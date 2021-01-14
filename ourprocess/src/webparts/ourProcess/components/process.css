@@ -1,0 +1,78 @@
+.view_process .title {
+  font-size: 32px;
+  line-height: 24px;
+  text-transform:uppercase;
+  font-weight: normal;
+    font-family: 'FS Albert Web Regular';
+  margin-top: 36px;
+  margin-bottom: 17px;
+  background-color: #f3f2f1;
+}
+
+.breaking_line {
+border:1px solid #b8c1cb;
+}
+
+.ourprocess_container {
+  background-color: #f3f2f1;
+}
+
+.view_process .process_details .process_info {
+  width: 39%;
+  display: inline-block;
+  float: left;
+font-weight: lighter;
+    font-family: 'FS Albert Web light';
+    font-size: 18px;
+  margin-right: 6%;
+  background-color: #f3f2f1;
+
+}
+
+
+.view_process .process_details .process_info a{
+display:none;
+}
+
+@media only screen and (min-device-width : 900px) and (max-device-width : 1150px) {
+.view_process .process_details .process_info {
+width: 34%;
+margin-right: 2%;
+}
+}
+
+.view_process .process_image_mobile {
+	display:none;
+}
+
+@media screen and (max-width: 768px) {
+
+.view_process .title {
+    font-size: 20px;
+}
+
+.view_process .process_image_mobile {
+	display:block;
+}
+
+.view_process .process_image_mobile img {
+	width:100%;
+}
+
+.process_image {
+display:none;
+}
+
+.view_process .process_details .process_info {
+
+font-size: 16px;
+    line-height: 17px;
+	width:100%;
+}
+}
+
+.view_process .process_details img {
+ 
+  margin-top: 26px;
+  background-color: #f3f2f1;
+}

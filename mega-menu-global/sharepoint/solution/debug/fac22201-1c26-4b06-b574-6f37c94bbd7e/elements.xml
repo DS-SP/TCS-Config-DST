@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="Megamenu"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="4440a9c9-68b4-4198-b602-b0ed6470940e"
+        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}"
+        HostProperties="{&quot;preAllocatedApplicationCustomizerTopHeight&quot;:&quot;50&quot;,&quot;preAllocatedApplicationCustomizerBottomHeight&quot;:&quot;50&quot;}">  
+    </CustomAction>
+</Elements>

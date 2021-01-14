@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "complementary-services-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/complementaryServices/ComplementaryServicesWebPart.js",
+          "manifest": "./src/webparts/complementaryServices/ComplementaryServicesWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ComplementaryServicesWebPartStrings": "lib/webparts/complementaryServices/loc/{locale}.js"
+  }
+}

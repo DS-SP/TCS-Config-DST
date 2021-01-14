@@ -1,0 +1,121 @@
+body {
+  background: #f3f2f1;
+  padding-left: 8%;
+  padding-right: 2.6%;
+  font-family: system-ui;
+}
+div[data-sp-feature-tag="CaseStudiesWebPart web part (case-studies)"] {
+  background: #f3f2f1;
+}
+body .case_studies .title_case {
+  font-size: 32px;
+  line-height: 24px;
+  margin-top: 38px;
+font-weight:normal;
+font-family: 'FS Albert Web Regular';
+ text-transform:uppercase;
+  margin-bottom: 25px;
+  background: #f3f2f1;
+}
+body .case_studies a .image {
+  display: inline-block;
+  padding-right: 1%;
+}
+body .case_studies a .image .overlapped_title {
+  margin-top: -17%;
+  margin-left: 16px;
+    font-size: 20px;
+font-family: 'FS Albert Web Bold';
+    font-weight:700;
+  color: white;
+}
+body .case_studies .mobile_dots {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  body .case_studies .mobile_dots {
+    display: inline-block;
+    text-align: center;    
+    margin-top: 36px;
+    width: 100%;
+  }
+
+body .case_studies a .image .overlapped_title {
+  margin-top: -25%;
+}
+
+body .case_studies .scroll_horizontal {
+	width: 1200px;
+    height: 203px;
+    display: block;
+    overflow: hidden;
+}
+
+body .case_studies .scroll_horizontal a {
+width: 230px;
+    display: inline-block;
+    float: left;
+    margin: 0 10px;
+}
+
+}
+body .case_studies .mobile_dots .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #d8d8d8;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+body .case_studies .mobile_dots .active {
+  background: #005270;
+}
+body .case_studies .show_arrow {
+  padding: 4% 0 6% 0;
+  margin-right:30px;
+  clear: both;
+  text-align: right;
+}
+@media screen and (max-width: 767px) {
+  body .case_studies .show_arrow {
+    text-align: center;
+    padding: 20px 0 26px 0;
+	margin-right:0px;
+  }
+}
+body .case_studies .show_arrow .show_all {
+  border-radius: 8px;
+  width: 108px;
+  font-weight:normal;
+font-family: 'FS Albert Web REGULAR';
+  padding: 1% 0.5%;
+  background: #005270;
+  line-height: 14px;
+  /* float: left; */
+  color: white;
+  display: inline-block;
+  font-size: 17px;
+  letter-spacing: 0.24px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  body .case_studies .show_arrow .show_all {
+    padding: 3%;
+  }
+}
+body .case_studies .show_arrow i {
+  font-size: 22px;
+  padding: 0 0.5%;
+  text-align: right;
+}
+@media screen and (max-width: 767px) {
+  body .case_studies .show_arrow i {
+    display: none;
+  }
+}
+
+.breaking_line {
+border:1px solid #b8c1cb;
+}

@@ -1,0 +1,105 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+
+.carousel {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    max-width: 1268px;
+    padding: 0 16px;
+  }
+
+  .carouselWrapper {
+    @media only screen and (max-width: 767px) {
+      background-position: center left;
+      // background: 'url("https://pfizer.sharepoint.com/sites/DST/HomePage_Carousel_Images/Background.jpg") no-repeat center center / cover';
+    }
+
+    .carouselItem {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 4% 7.2%;
+      margin: 0 auto;
+
+      @media only screen and (min-width: 1400px) {
+        padding: 100px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        padding: 20px;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+
+      .carouselText {
+        color: #fff;
+
+        h1 {
+          font-family: SegoeUI-Light;
+          font-weight: normal;
+          font-size: 3.3vw;
+          line-height: 6.5vw;
+          margin: 0 0 20px;
+          max-width: 450px;
+
+          .logo {
+            display: inline-block;
+            vertical-align: middle;
+
+            @media only screen and (max-width: 767px) {
+              margin-left: 5px;
+              max-width: 65px;
+            }
+          }
+
+          @media only screen and (min-width: 1400px) {
+            font-size: 104px;
+            line-height: 85px;
+          }
+
+          @media only screen and (max-width: 767px) {
+            max-width: 100%;
+            font-size: 7.7vw;
+            line-height: 6.2vw;
+          }
+        }
+
+        p {
+          max-width: 508px;
+          font-size: 18px;
+          line-height: 22px;
+          font-family: SegoeUI-Light;
+
+          @media only screen and (max-width: 767px) {
+            max-width: 100%;
+            font-size: 18px;
+            line-height: 22px;
+          }
+        }
+      }
+
+      .carouselImage {
+        max-width: 540px;
+        width: 50%;
+        @media only screen and (max-width: 767px) {
+          margin: 0 auto;
+          width: 100%;
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

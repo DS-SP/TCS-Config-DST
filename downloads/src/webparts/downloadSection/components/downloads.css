@@ -1,0 +1,97 @@
+.download-section {
+  background: rgb(243, 242, 241);
+}
+.download-section .download-title {
+  line-height: 24px;
+  font-size: 32px;
+  margin: 36px 0 47px;
+  font-weight: normal;
+font-family: 'FS Albert Web Regular';
+}
+@media screen and (max-width: 768px) {
+  .download-section .download-title {
+    font-size: 20px;
+    margin: 22px 0;
+  }
+}
+.download-section .report-link {
+  justify-content: center;
+  display: flex;
+  /* text-align: center; */
+  /* clear: both; */
+  position: relative;
+  margin-bottom: 46px;
+}
+.breaking_line {
+border:1px solid #b8c1cb;
+}
+@media screen and (max-width: 768px) {
+  .download-section .report-link {
+    display: inline-block;
+  }
+}
+.download-section .report-link .links {
+  display: inline-block;
+  list-style: none;
+  margin: 0 0 0 46px;
+  min-width: 263px;
+}
+@media screen and (max-width: 768px) {
+  .download-section .report-link .links {
+    clear: both;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+}
+.download-section .report-link .links li {
+  margin: 7.5px 0;
+  color: #616365;
+  font-weight: lighter;
+  font-size: 21px;
+  letter-spacing: 0;
+}
+.download-section .report-link .links li label {
+  font-weight: bold;
+  font-size: 18px;
+font-family: 'FS Albert Web Bold';
+  letter-spacing: -0.25px;
+}
+@media screen and (max-width: 768px) {
+  .download-section .report-link .links li label {
+    position: relative;
+    top: -20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .download-section .report-link .links li {
+    margin: 10px 0;
+    font-weight: lighter;
+    line-height: 23px;
+  }
+}
+.download-section .report-link .links li a {
+  text-decoration: none;
+  color: #0093d0;
+  font-family: 'FS Albert Web Regular';
+}
+a:hover {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .download-section .report-link .links li a {
+    color: #0093d0;
+    font-size: 12px;
+    line-height: 23px;
+  }
+}
+.download-section .report-link .links li img {
+  margin-right: 16px;
+}
+@media screen and (max-width: 768px) {
+  .download-section .report-link .links li img {
+    height: 64px;
+  }
+}
