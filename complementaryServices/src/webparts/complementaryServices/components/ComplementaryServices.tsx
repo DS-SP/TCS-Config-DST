@@ -22,26 +22,45 @@ export default class ComplementaryServices extends React.Component<IComplementar
   }
 
   private async getItemsFromList(listName: string) {
-    let response: any = await SharePointManagerService.getItems(listName);
+    let response: any = await SharePointManagerService.getItems(listName, false);
     let jsonresponse: any = await response.json();
     let items: any = jsonresponse.d.results;
     debugger;
+    let pageResponse: any = await SharePointManagerService.getItems('Site Pages', true);
+    let pagejsonresponse: any = await pageResponse.json();
+    let pageitem: any = pagejsonresponse.d.results[0];
+    console.log("Page item: "+pageitem.Title);
     let complementaryServicesItems: IComplementaryServicesItem[] = items.map((item) => {
       let complementaryServicesItem: IComplementaryServicesItem = {
         title: item.Title,
         description: item.Description,
         category: item.Category,
         capability: item.Capability,
-        serviceOwner: item.ServiceOwner.Title
+        serviceOwner: item.ServiceOwner.Title,
+        servicePageArray: item.ServicePage.results
       };
       return complementaryServicesItem;
     });
+
+    let filteredItems: IComplementaryServicesItem[] = complementaryServicesItems.filter(complementaryServicesItem => {
+      if(this.search(complementaryServicesItem.servicePageArray, pageitem.Title)) {
+        return complementaryServicesItem;
+      }
+    });
     this.setState({
-      complementaryServicesItems: complementaryServicesItems,
+      complementaryServicesItems: filteredItems,
     });
     let totalItems = this.state.complementaryServicesItems.length;
     let pagnationCount: number = totalItems % 3 != 0 ? (totalItems / 3 + 1) : (totalItems / 3);
     this.setState({ pagnationcount: pagnationCount });
+  }
+
+  public search(servicePageArray: any[], pageTitle: string) {
+    for (var i=0; i < servicePageArray.length; i++) {
+      if (servicePageArray[i].Title === pageTitle) {
+          return true;
+      }
+    }
   }
 
   public handleClick(direction: string) {

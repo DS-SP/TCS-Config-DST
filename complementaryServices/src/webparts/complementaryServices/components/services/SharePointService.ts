@@ -10,12 +10,13 @@ export class SharePointManager {
     this.context = context;
   }
 
-  public getItems(listName: string): Promise<SPHttpClientResponse> {
+  public getItems(listName: string, isPageLibrary: boolean): Promise<SPHttpClientResponse> {
     return new Promise<SPHttpClientResponse>((resolve, reject) => {
+      let queryString: string = isPageLibrary ? `$filter=(Id eq '${this.context.pageContext.listItem.id}')`: "$select=Title,Category,Capability,Description,ServiceOwner/Title,ServicePage/Title&$expand=ServiceOwner/Title,ServicePage";
       try {
         this.context.spHttpClient
           .get(
-            `${CONSTANTS.SITEURL}/_api/web/lists/getbytitle('${listName}')/items?$select=Title,Category,Capability,Description,ServiceOwner/Title&$expand=ServiceOwner/Title`,
+            `${CONSTANTS.SITEURL}/_api/web/lists/getbytitle('${listName}')/items?${queryString}`,
             SPHttpClient.configurations.v1,
             {
               headers: {

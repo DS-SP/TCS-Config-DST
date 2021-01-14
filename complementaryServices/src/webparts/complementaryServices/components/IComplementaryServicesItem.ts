@@ -4,4 +4,5 @@ export default interface IComplementaryServicesItem {
     category: string;
     capability: string;
     serviceOwner: string;
+    servicePageArray: any[];
 }

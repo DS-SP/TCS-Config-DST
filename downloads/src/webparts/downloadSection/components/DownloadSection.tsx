@@ -17,20 +17,37 @@ export default class DownloadSection extends React.Component<IDownloadSectionPro
   }
   private async getItemsFromList(listName: string) {
     debugger;
-    let response: any = await SharePointManagerService.getItems(listName);
+    let response: any = await SharePointManagerService.getItems(listName, false);
     let jsonresponse: any = await response.json();
     let items: any = jsonresponse.d.results;
     debugger;
+    let pageResponse: any = await SharePointManagerService.getItems('Site Pages', true);
+    let pagejsonresponse: any = await pageResponse.json();
+    let pageitem: any = pagejsonresponse.d.results[0];
     let downloadItems: IDownloadItem[] = items.map((item) => {
       let downloadItem: IDownloadItem = {
         serverRelativeUrl: item.File.ServerRelativeUrl,
-        fileName: item.File.Name
+        fileName: item.File.Name,
+        servicePageArray: item.ServicePage.results
       };
       return downloadItem;
     });
-    this.setState({
-      downloadItems: downloadItems,
+    let filteredItems: IDownloadItem[] = downloadItems.filter(downloadItem => {
+      if(this.search(downloadItem.servicePageArray, pageitem.Title)) {
+        return downloadItem;
+      }
     });
+    this.setState({
+      downloadItems: filteredItems,
+    });
+  }
+
+  public search(servicePageArray: any[], pageTitle: string) {
+    for (var i=0; i < servicePageArray.length; i++) {
+      if (servicePageArray[i].Title === pageTitle) {
+          return true;
+      }
+  }
   }
 
   public componentDidMount() {

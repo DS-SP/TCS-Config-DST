@@ -72,6 +72,16 @@ font-weight: normal;
     font-size: 22px;
     letter-spacing: .43px;
 }
+
+body .inputs .user-input textarea {
+    width: 805px;
+    height: 135px;
+    border: none;
+    display: block;
+    resize: none;
+    font-family: 'FS Albert Web regular';
+}
+
 @media screen and (max-width: 768px) {
   body .inputs .user-input {
     margin-bottom: 18px;
@@ -79,6 +89,10 @@ font-weight: normal;
     font-size: 12px;
     line-height:23px;
   }
+
+body .inputs .user-input textarea {
+    width: 100%;
+}
 }
 body .inputs .user-input input {
   display: block;
